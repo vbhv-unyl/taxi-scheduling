@@ -20,6 +20,7 @@ struct taxi
 };
 
 vector<pair<int, query> > accepted_queries, rejected_queries;
+vector<vector<int> > dist;
 
 vector<vector<int> > getShortestDistance(vector<vector<int> > &g)
 {
@@ -146,7 +147,6 @@ int findTaxi(pair<int, int> &pickup, pair<int, int> &qr, vector<taxi> &t, vector
     return found;
 }
 
-
 int solveQueries(vector<vector<int> > &dist, vector<query> &q, vector<taxi> &t)
 {
     int profit = 0;
@@ -172,6 +172,11 @@ int solveQueries(vector<vector<int> > &dist, vector<query> &q, vector<taxi> &t)
 
 bool myCompare(query &a, query &b)
 {
+    if(a.pickStart == b.pickStart)
+    {
+        return dist[a.src][a.dest] > dist[b.src][b.dest];
+    }
+
     return a.pickStart <= b.pickStart;
 }
 
@@ -208,9 +213,9 @@ void STACK_CODED()
         q[i].dest -= 1;
     }
 
+    dist = getShortestDistance(g);
     sort(q.begin(), q.end(), myCompare);
 
-    vector<vector<int> > dist = getShortestDistance(g);
 
     cout << "Profit Generated : "  << solveQueries(dist, q, t) << "\n\n";
     cout << "Following Queries were accepted : \n";
