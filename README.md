@@ -38,24 +38,25 @@ SAMPLE INPUT :
 
 
 SAMPLE OUTPUT :
-Profit Generated : 551
+Profit Generated : 581
 
 Following Queries were accepted : 
-Vehicle No : 10	   Query : 4 2 239 539
-Vehicle No : 01	   Query : 4 1 239 839
-Vehicle No : 01	   Query : 2 4 390 752
+Vehicle No : 10	   Query : 4 1 239 839
+Vehicle No : 01	   Query : 4 2 239 539
 Vehicle No : 01	   Query : 1 4 600 645
-Vehicle No : 01	   Query : 5 1 610 623
-Vehicle No : 10	   Query : 1 2 619 623
-Vehicle No : 10	   Query : 4 2 625 739
-Vehicle No : 10	   Query : 4 2 625 739
-Vehicle No : 02	   Query : 2 5 639 672
-Vehicle No : 02	   Query : 1 5 640 720
-Vehicle No : 02	   Query : 2 5 645 725
-Vehicle No : 01	   Query : 2 1 647 723
-Vehicle No : 02	   Query : 2 5 647 723
-Vehicle No : 02	   Query : 2 5 654 729
-Vehicle No : 03	   Query : 4 3 655 739
-Vehicle No : 02	   Query : 4 5 704 723
-Vehicle No : 03	   Query : 1 3 719 923
-Vehicle No : 01	   Query : 2 4 739 752
+Vehicle No : 10	   Query : 5 1 610 623
+Vehicle No : 02	   Query : 1 2 619 623
+Vehicle No : 02	   Query : 4 2 625 739
+Vehicle No : 02	   Query : 4 2 625 739
+Vehicle No : 01	   Query : 2 5 639 672
+Vehicle No : 01	   Query : 1 5 640 720
+Vehicle No : 01	   Query : 2 5 645 725
+Vehicle No : 01	   Query : 2 5 647 723
+Vehicle No : 10	   Query : 2 1 647 723
+Vehicle No : 01	   Query : 2 5 654 729
+Vehicle No : 02	   Query : 4 3 655 739
+Vehicle No : 03	   Query : 1 4 700 745
+Vehicle No : 01	   Query : 4 5 704 723
+Vehicle No : 02	   Query : 1 3 719 923
+Vehicle No : 03	   Query : 1 4 720 745
+Vehicle No : 03	   Query : 2 4 739 752
